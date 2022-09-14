@@ -15,7 +15,7 @@ public class Card {
     private Integer releasePrice;
     private Kollection collection;
 
-    public Double calculateEstimatedPrice(EstimatedPriceCalculationStrategy calculationStrategy) {
-        return calculationStrategy.calculate(this);
+    public Double calculateEstimatedPrice(EstimatedPriceCalculationStrategy calculationStrategy, int currentYear) {
+        return calculationStrategy.calculate(this, currentYear);
     }
 }
