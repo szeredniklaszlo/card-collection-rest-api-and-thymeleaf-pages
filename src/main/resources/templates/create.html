@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+    <h1>Create</h1>
+    <form method="post" th:action="@{/create}" th:object="${cardDTO}">
+        <div><label>Name:<input type="text" th:field="*{name}"></label></div>
+        <div><label>Type:<input type="text" th:field="*{type}"></label></div>
+        <div><label>Quantity ratio:<input type="text" th:field="*{quantityRatio}"></label></div>
+        <div><label>Obtain price:<input type="number" th:field="*{obtainPrice}"></label></div>
+        <div><label>Obtain year:<input type="number" th:field="*{obtainYear}"></label></div>
+        <div><label>Release year:<input type="number" th:field="*{releaseYear}"></label></div>
+        <div><label>Release price:<input type="number" th:field="*{releasePrice}"></label></div>
+        <div><input type="submit"></div>
+    </form>
+</body>
+</html>

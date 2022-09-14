@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Estimated Price Calculator</title>
+</head>
+<body>
+  <h1>Estimated Price Calculator</h1>
+  <form th:method="get" th:action="@{/estimated-price-calculator/result}">
+    <input type="hidden" th:value="${id}" th:name="id"/>
+    <div>
+      <label>Strategy:
+        <select th:name="strategy">
+          <option th:value="default" th:text="'Default'"/>
+          <option th:value="quantityRatioPrioritizing" th:text="'Quantity Ratio Prioritizing'"/>
+        </select>
+      </label>
+    </div>
+    <div><input type="submit"></div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Collection Create</title>
+</head>
+<body>
+    <h1>Collection Create</h1>
+    <form method="post" th:action="@{/kollection-create}" th:object="${kollectionDTO}">
+        <div><label>Name:<input type="text" th:field="*{name}"></label></div>
+        <div><input type="submit"></div>
+    </form>
+</body>
+</html>

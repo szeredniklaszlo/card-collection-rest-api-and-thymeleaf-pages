@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estimated Price Calculator - Result</title>
+</head>
+<body>
+  <h1>Estimated Price Calculator - Result</h1>
+  <div th:text="'Name: ' + ${cardDTO.name}"></div>
+  <div th:text="'Estimated Price: ' + ${cardDTO.getEstimatedPrice()}"></div>
+</body>
+</html>

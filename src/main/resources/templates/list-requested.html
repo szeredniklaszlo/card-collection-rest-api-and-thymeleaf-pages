@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Requested</title>
+</head>
+<body>
+  <h1>List Requested</h1>
+
+  <form method="get" th:action="@{/list-requested/result}">
+    <div><label>Lower limit:<input type="text" th:name="lowerLimit"></label></div>
+    <div><input type="submit"></div>
+  </form>
+</body>
+</html>
